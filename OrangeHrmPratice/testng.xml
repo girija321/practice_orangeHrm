@@ -8,6 +8,7 @@
 		  </classes>
 		   </test>
 
+<!-- 
 <test name="edgeTest">
 	  <parameter name="browser" value="edge"></parameter>
 	  <classes>
@@ -21,5 +22,9 @@
 		  <class name = "loginTest.Test" />
 		  </classes>		  		  
 	  
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+    --> 
+  
+  
+</suite>
+
