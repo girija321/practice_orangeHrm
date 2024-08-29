@@ -20,7 +20,7 @@ public class BaseClass {
  
 	Logger Logger;
 
-	@BeforeMethod
+	@BeforeClass
 	@Parameters("browser")
 	public void setup(String browser) {
 		
@@ -41,9 +41,9 @@ public class BaseClass {
 				
 	}
 	
-	@AfterMethod
-	public void teardown() {
-		driver.quit();
-	}
-	
+//	@AfterClass
+//	public void teardown() {
+//		driver.quit();
+//	}
+//	
 }

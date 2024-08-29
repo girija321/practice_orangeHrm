@@ -3,19 +3,23 @@ package loginTest;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 //import org.testng.annotations.Test;
 
+import pageObjectModule.DashboardPage;
 import pageObjectModule.LoginPage;
 import utility.ExcelReader;
 
 public class Test extends BaseClass {
 	LoginPage login;
+	DashboardPage dashboard;
 	@DataProvider(name = "testData")
     public Object[][] testData() throws IOException {
         return ExcelReader.getTestData("C:/Users/admin/git/practice_orangeHrm/OrangeHrmPratice/src/test/resources/data driven.xlsx", "Sheet1");
     }
-	@org.testng.annotations.Test(dataProvider = "testData")
+   
+	@org.testng.annotations.Test(dataProvider = "testData", priority=0 ) 
 	    public void testWithData(String username, String password) {
 	        // Your test logic using the data
 		login = new LoginPage(driver);
@@ -34,7 +38,10 @@ public class Test extends BaseClass {
 		
 	else { Assert.assertTrue(false);
 	    Logger.info("test fail");
+	    
+	   
 	}
+		
 	    }
 	
 	
@@ -60,8 +67,16 @@ public class Test extends BaseClass {
 //	
 //	}
 //	
+	
+	@org.testng.annotations.Test (priority = 1) 
 	public void dashboard() {
-		
+		dashboard = new DashboardPage(driver);
+		//dashboard.clickOnUserDropdown(); 
+		dashboard.clickOnUserDropdown1();
+	
+
+	
 	}
+
 
 }
