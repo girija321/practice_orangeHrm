@@ -1,6 +1,7 @@
 package loginTest;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -10,7 +11,7 @@ import org.testng.annotations.DataProvider;
 import pageObjectModule.DashboardPage;
 import pageObjectModule.LoginPage;
 import utility.ExcelReader;
-
+import java.util.ArrayList;
 public class Test extends BaseClass {
 	LoginPage login;
 	DashboardPage dashboard;
@@ -71,10 +72,19 @@ public class Test extends BaseClass {
 	@org.testng.annotations.Test (priority = 1) 
 	public void dashboard() {
 		dashboard = new DashboardPage(driver);
-		//dashboard.clickOnUserDropdown(); 
-		dashboard.clickOnUserDropdown1();
-	
-
+		dashboard.clickOnUserDropdown(); 
+		dashboard.validateUserDropdown();
+		
+	  
+//		ArrayList<String> expectedOptions = new ArrayList();
+//		expectedOptions.add("About");
+//		expectedOptions.add("Support");
+//		expectedOptions.add("Change Password");
+//		expectedOptions.add("Logout");
+//		/dashboard.validateDropdownOptions(expectedOptions);
+//		
+		
+      
 	
 	}
 

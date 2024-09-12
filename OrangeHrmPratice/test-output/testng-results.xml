@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-29T13:39:03 PDT" name="Suite" finished-at="2024-08-29T13:39:39 PDT" duration-ms="35078">
+  <suite started-at="2024-09-11T13:28:47 PDT" name="Suite" finished-at="2024-09-11T13:29:22 PDT" duration-ms="34818">
     <groups>
     </groups>
-    <test started-at="2024-08-29T13:39:03 PDT" name="chromeTest" finished-at="2024-08-29T13:39:39 PDT" duration-ms="35078">
+    <test started-at="2024-09-11T13:28:47 PDT" name="chromeTest" finished-at="2024-09-11T13:29:22 PDT" duration-ms="34818">
       <class name="loginTest.Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTest.Test@63376bed]" started-at="2024-08-29T13:39:04 PDT" name="setup" finished-at="2024-08-29T13:39:28 PDT" duration-ms="24517" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTest.Test@63376bed]" started-at="2024-09-11T13:28:47 PDT" name="setup" finished-at="2024-09-11T13:29:09 PDT" duration-ms="22051" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testWithData(java.lang.String,java.lang.String)[pri:0, instance:loginTest.Test@63376bed]" started-at="2024-08-29T13:39:33 PDT" name="testWithData" data-provider="testData" finished-at="2024-08-29T13:39:37 PDT" duration-ms="4363" status="PASS">
+        <test-method signature="testWithData(java.lang.String,java.lang.String)[pri:0, instance:loginTest.Test@63376bed]" started-at="2024-09-11T13:29:19 PDT" name="testWithData" data-provider="testData" finished-at="2024-09-11T13:29:21 PDT" duration-ms="1719" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWithData -->
-        <test-method signature="dashboard()[pri:1, instance:loginTest.Test@63376bed]" started-at="2024-08-29T13:39:38 PDT" name="dashboard" finished-at="2024-08-29T13:39:39 PDT" duration-ms="1027" status="PASS">
+        <test-method signature="dashboard()[pri:1, instance:loginTest.Test@63376bed]" started-at="2024-09-11T13:29:21 PDT" name="dashboard" finished-at="2024-09-11T13:29:22 PDT" duration-ms="863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashboard -->
